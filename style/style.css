@@ -1,0 +1,263 @@
+@font-face {
+  font-family: Inter;
+  /* Имя шрифта */
+  src: url(../fonts/Inter-SemiBold.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: 500;
+}
+@font-face {
+  font-family: Rubik;
+  /* Имя шрифта */
+  src: url(../fonts/Rubik-Regular.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: bold;
+}
+@font-face {
+  font-family: Rubik-Medium;
+  /* Имя шрифта */
+  src: url(../fonts/Rubik-Medium.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: 900;
+}
+@font-face {
+  font-family: Rubik-Bold;
+  /* Имя шрифта */
+  src: url(../fonts/Rubik-Bold.ttf);
+  /* Путь к файлу со шрифтом */
+  font-weight: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.wrapper {
+  width: 83.333%;
+  margin: 0 auto;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  border-radius: 32px;
+  border: none;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 65px;
+  background-color: #3671E9;
+  color: white;
+  font-family: Rubik-Medium;
+  font-size: 18px;
+  cursor: pointer;
+}
+header {
+  width: 100%;
+  background: #0D0D2B;
+  padding: 70px 0px 115px;
+}
+header .wrapper .top_panel {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5%;
+}
+header .wrapper .top_panel .logo {
+  display: flex;
+  align-items: center;
+}
+header .wrapper .top_panel .logo img {
+  width: 55px;
+  height: 55px;
+  margin-right: 20px;
+}
+header .wrapper .top_panel .logo p {
+  font-size: 20px;
+  letter-spacing: 8px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Inter;
+}
+header .wrapper .top_panel nav {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .wrapper .top_panel nav a {
+  font-size: 18px;
+  font-family: Rubik;
+  text-transform: capitalize;
+}
+header .wrapper .header_main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .wrapper .header_main .info {
+  width: 45%;
+}
+header .wrapper .header_main .info h2 {
+  font-family: Rubik-Bold;
+  font-size: 4vw;
+  color: white;
+  line-height: 5vw;
+}
+header .wrapper .header_main .info p {
+  margin-top: 20px;
+  max-width: 435px;
+  font-family: Rubik;
+  font-size: 1.05vw;
+  color: white;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+header .wrapper .header_main .info button span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .wrapper .header_main .info button span img {
+  width: 40%;
+  height: 40%;
+}
+header .wrapper .header_main img {
+  width: 45%;
+}
+section#achievements {
+  background: #0D0D2B;
+  padding-bottom: 100px;
+}
+section#achievements .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section#achievements .wrapper .achievement {
+  width: 32%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+section#achievements .wrapper .achievement .container {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: relative;
+}
+section#achievements .wrapper .achievement .container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section#achievements .wrapper .achievement .info {
+  width: 70%;
+  margin-left: 30px;
+}
+section#achievements .wrapper .achievement .info h4 {
+  font-family: Rubik-Bold;
+  font-size: 40px;
+  color: white;
+}
+section#achievements .wrapper .achievement .info p {
+  margin-top: 20px;
+  font-size: 16px;
+  font-family: Rubik;
+  color: white;
+}
+section#API {
+  background: #0D0D2B;
+  padding-bottom: 100px;
+}
+section#API .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section#API .wrapper img {
+  width: 49.5%;
+}
+section#API .wrapper .info {
+  width: 40%;
+  color: white;
+}
+section#API .wrapper .info h2 {
+  line-height: 150%;
+  font-family: Rubik-Bold;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+section#API .wrapper .info p {
+  max-width: 400px;
+  font-family: Rubik;
+  font-size: 16px;
+  line-height: 250%;
+  margin-bottom: 40px;
+}
+footer {
+  padding: 65px 0px;
+  background: #0D0D2B;
+}
+footer .wrapper .main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .wrapper .main div {
+  flex-basis: 15%;
+}
+footer .wrapper .main div h5 {
+  font-family: Rubik-Medium;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 35px;
+}
+footer .wrapper .main div nav {
+  display: flex;
+  flex-direction: column;
+}
+footer .wrapper .main div nav a {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: Rubik;
+}
+footer .wrapper .main .logo {
+  display: flex;
+  align-items: center;
+}
+footer .wrapper .main .logo img {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+footer .wrapper .main .logo p {
+  font-size: 18px;
+  letter-spacing: 8px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Inter;
+}
+footer .wrapper p.copyright {
+  margin-top: 100px;
+  font-family: Rubik;
+  font-size: 16px;
+  color: white;
+}
