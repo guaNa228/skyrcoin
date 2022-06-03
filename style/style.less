@@ -34,14 +34,31 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+    pointer-events: none;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+img.bg_img {
+    position: absolute;
+}
+
 .wrapper {
     width: 83.333%;
     margin: 0 auto;
+    position: relative;
 }
 
 a {
+    transition: .5s;
     color: white;
     text-decoration: none;
+    &:hover {
+        color: @buttonBlue;
+    }
 }
 
 button {
@@ -57,12 +74,27 @@ button {
     font-family: Rubik-Medium;
     font-size: 18px;
     cursor: pointer;
+    transition: .5s;
+    &:hover {
+        background-color: darken(@buttonBlue, 15%);
+    }
 }
 
 header {
     width: 100%;
     background: @darkBg;
     padding: 70px 0px 115px;
+    img.bg_img {
+        position: absolute;
+        &.right_line {
+            right: 0;
+            top: 60%;
+        }
+        &.left_line {
+            right: 10%;
+            top: 40%;
+        }
+    }
     .wrapper {
         .top_panel {
             width: 100%;
@@ -113,6 +145,7 @@ header {
                     font-size: 4vw;
                     color: white;
                     line-height: 5vw;
+                    margin-bottom: 50px;
                 }
                 p {
                     margin-top: 20px;
@@ -134,8 +167,16 @@ header {
                         align-items: center;
                         justify-content: center;
                         img {
+                            transition: .5s;
                             width: 40%;
                             height: 40%;
+                        }
+                    }
+                    &:hover {
+                        span {
+                            img {
+                                transform: translate(10px);
+                            }
                         }
                     }
                 }
@@ -147,6 +188,18 @@ header {
     }
 }
 
+@keyframes anim {
+    0% {
+        transform: translate(0px);
+    }
+    50% {
+        transform: translate(10px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
 section#achievements {
     background: @darkBg;
     padding-bottom: 100px;
@@ -155,7 +208,7 @@ section#achievements {
         flex-direction: row;
         justify-content: space-between;
         .achievement {
-            width: 32%;
+            width: 30%;
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -167,6 +220,8 @@ section#achievements {
                 border-radius: 50%;
                 position: relative;
                 img {
+                    width: 50px;
+                    height: 50px;
                     position: absolute;
                     top: 50%;
                     left: 50%;
@@ -176,6 +231,11 @@ section#achievements {
             .info {
                 width: 70%;
                 margin-left: 30px;
+                h5 {
+                    font-family: Rubik-Bold;
+                    font-size: 24px;
+                    color: white;
+                }
                 h4 {
                     font-family: Rubik-Bold;
                     font-size: 40px;
@@ -192,9 +252,23 @@ section#achievements {
     }
 }
 
-section#API {
+section#masternodes {
+    position: relative;
     background: @darkBg;
     padding-bottom: 100px;
+    img.bg_img {
+        &.circle {
+            right: 0;
+            top: 0;
+        }
+        &.bubble {
+            right: 0;
+            bottom: 0;
+        }
+        &.line {
+            top: 10%;
+        }
+    }
     .wrapper {
         display: flex;
         flex-direction: row;
@@ -213,10 +287,9 @@ section#API {
                 margin-bottom: 30px;
             }
             p {
-                max-width: 400px;
                 font-family: Rubik;
                 font-size: 16px;
-                line-height: 250%;
+                line-height: 200%;
                 margin-bottom: 40px;
             }
         }
@@ -251,6 +324,7 @@ footer {
                 }
             }
             .logo {
+                margin-top: -12px;
                 display: flex;
                 align-items: center;
                 img {
