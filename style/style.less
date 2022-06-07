@@ -24,6 +24,7 @@
 
 @darkBg: #0D0D2B;
 @buttonBlue: #3671E9;
+@highliting_orange: darken(#F9AA4B, 10%);
 
 * {
     margin: 0;
@@ -32,6 +33,10 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+b {
+    font-family: Rubik-Bold;
 }
 
 img {
@@ -57,7 +62,7 @@ a {
     color: white;
     text-decoration: none;
     &:hover {
-        color: @buttonBlue;
+        color: @highliting_orange
     }
 }
 
@@ -291,6 +296,99 @@ section#masternodes {
                 font-size: 16px;
                 line-height: 200%;
                 margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+section#reward {
+    padding-bottom: 100px;
+    background: @darkBg;
+    .wrapper {
+        color: white;
+        text-align: center;
+        .description {
+            h2 {
+                font-size: 40px;
+                margin-bottom: 30px;
+                font-family: Rubik-Bold;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 30px;
+                font-family: Rubik;
+                b {
+                    color: @highliting_orange;
+                }
+            }
+        }
+        div.table {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .row {
+                width: 100%;
+                font-family: Rubik;
+                font-size: 16px;
+                padding: 15px 0px;
+                border-bottom: 1px solid white;
+                &.header {
+                    font-family: Rubik-Bold;
+                    font-size: 20px;
+                }
+                &.current {
+                    color: @highliting_orange;
+                }
+                ul {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    list-style: none;
+                    justify-content: space-between;
+                    li {
+                        flex-basis: 14.25%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#exchange {
+    position: relative;
+    background: @darkBg;
+    padding-bottom: 100px;
+    img.bg_img {
+        &.line {
+            bottom: 0;
+            right: 0;
+        }
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        img {
+            width: 49.5%;
+        }
+        .info {
+            width: 40%;
+            color: white;
+            h2 {
+                line-height: 150%;
+                font-family: Rubik-Bold;
+                font-size: 40px;
+                margin-bottom: 30px;
+            }
+            p {
+                font-family: Rubik;
+                font-size: 16px;
+                line-height: 200%;
+                margin-bottom: 40px;
+                b {
+                    color: @highliting_orange;
+                }
             }
         }
     }

@@ -33,6 +33,9 @@
 html {
   scroll-behavior: smooth;
 }
+b {
+  font-family: Rubik-Bold;
+}
 img {
   pointer-events: none;
   -moz-user-select: none;
@@ -54,7 +57,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #3671E9;
+  color: #f7931a;
 }
 button {
   border-radius: 32px;
@@ -274,6 +277,93 @@ section#masternodes .wrapper .info p {
   font-size: 16px;
   line-height: 200%;
   margin-bottom: 40px;
+}
+section#reward {
+  padding-bottom: 100px;
+  background: #0D0D2B;
+}
+section#reward .wrapper {
+  color: white;
+  text-align: center;
+}
+section#reward .wrapper .description h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: Rubik-Bold;
+}
+section#reward .wrapper .description p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-family: Rubik;
+}
+section#reward .wrapper .description p b {
+  color: #f7931a;
+}
+section#reward .wrapper div.table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section#reward .wrapper div.table .row {
+  width: 100%;
+  font-family: Rubik;
+  font-size: 16px;
+  padding: 15px 0px;
+  border-bottom: 1px solid white;
+}
+section#reward .wrapper div.table .row.header {
+  font-family: Rubik-Bold;
+  font-size: 20px;
+}
+section#reward .wrapper div.table .row.current {
+  color: #f7931a;
+}
+section#reward .wrapper div.table .row ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+section#reward .wrapper div.table .row ul li {
+  flex-basis: 14.25%;
+}
+section#exchange {
+  position: relative;
+  background: #0D0D2B;
+  padding-bottom: 100px;
+}
+section#exchange img.bg_img.line {
+  bottom: 0;
+  right: 0;
+}
+section#exchange .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section#exchange .wrapper img {
+  width: 49.5%;
+}
+section#exchange .wrapper .info {
+  width: 40%;
+  color: white;
+}
+section#exchange .wrapper .info h2 {
+  line-height: 150%;
+  font-family: Rubik-Bold;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+section#exchange .wrapper .info p {
+  font-family: Rubik;
+  font-size: 16px;
+  line-height: 200%;
+  margin-bottom: 40px;
+}
+section#exchange .wrapper .info p b {
+  color: #f7931a;
 }
 footer {
   padding: 65px 0px;
