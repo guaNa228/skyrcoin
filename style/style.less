@@ -126,12 +126,12 @@ header {
                 }
             }
             nav {
-                width: 40%;
+                width: 55%;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 a {
-                    font-size: 18px;
+                    font-size: 16px;
                     font-family: Rubik;
                     text-transform: capitalize;
                 }
@@ -388,6 +388,174 @@ section#exchange {
                 margin-bottom: 40px;
                 b {
                     color: @highliting_orange;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 65px 0px;
+    background: @darkBg;
+    .wrapper {
+        .main {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            div {
+                flex-basis: 15%;
+                h5 {
+                    font-family: Rubik-Medium;
+                    font-size: 20px;
+                    color: white;
+                    margin-bottom: 35px;
+                }
+                nav {
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        margin-bottom: 20px;
+                        font-size: 16px;
+                        font-family: Rubik;
+                    }
+                }
+            }
+            .logo {
+                margin-top: -12px;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 20px;
+                }
+                p {
+                    font-size: 18px;
+                    letter-spacing: 8px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-family: Inter;
+                    
+                }
+            }
+        }
+        p.copyright {
+            margin-top: 100px;
+            font-family: Rubik;
+            font-size: 16px;
+            color: white;
+        }
+    }
+}
+
+section#reward {
+    padding-bottom: 100px;
+    background: @darkBg;
+    .wrapper {
+        color: white;
+        text-align: center;
+        .description {
+            h2 {
+                font-size: 40px;
+                margin-bottom: 30px;
+                font-family: Rubik-Bold;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 30px;
+                font-family: Rubik;
+                b {
+                    color: @highliting_orange;
+                }
+            }
+        }
+        div.table {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            .row {
+                width: 100%;
+                font-family: Rubik;
+                font-size: 16px;
+                padding: 15px 0px;
+                border-bottom: 1px solid white;
+                &.header {
+                    font-family: Rubik-Bold;
+                    font-size: 20px;
+                }
+                &.current {
+                    color: @highliting_orange;
+                }
+                ul {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    list-style: none;
+                    justify-content: space-between;
+                    li {
+                        flex-basis: 14.25%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#specification {
+    padding-bottom: 100px;
+    background: @darkBg;
+    .wrapper {
+        color: white;
+        text-align: center;
+        .description {
+            h2 {
+                font-size: 40px;
+                margin-bottom: 30px;
+                font-family: Rubik-Bold;
+            }
+            p {
+                font-size: 16px;
+                margin-bottom: 30px;
+                font-family: Rubik;
+                b {
+                    color: @highliting_orange;
+                }
+            }
+        }
+        div.table {
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            .row {
+                width: 100%;
+                font-family: Rubik;
+                font-size: 20px;
+                padding: 15px 0px;
+                border-bottom: 1px solid white;
+                &.header {
+                    font-family: Rubik-Bold;
+                    font-size: 20px;
+                }
+                &.current {
+                    color: @highliting_orange;
+                }
+                ul {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    list-style: none;
+                    justify-content: space-between;
+                    li:first-child {
+                        font-family: Rubik-Medium;
+                        text-align: left;
+                        flex-basis: 25%;
+                    }
+                    li:last-child {
+                        text-align: right;
+                        flex-basis: 75%;
+                    }
                 }
             }
         }

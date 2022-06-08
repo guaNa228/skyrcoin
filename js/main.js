@@ -1,6 +1,6 @@
 function getCurrentBlock() {
   let ans;
-  url = 'http://185.177.219.170:3001/api/getblockcount'
+  url = 'http://cors-anywhere.herokuapp.com/http://185.177.219.170:3001/api/getblockcount'
   return fetch(url).then(function(response) {
       response.text().then(function(text) {
         let rows = document.querySelectorAll('.table .row.default');

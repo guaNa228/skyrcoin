@@ -118,13 +118,13 @@ header .wrapper .top_panel .logo p {
   font-family: Inter;
 }
 header .wrapper .top_panel nav {
-  width: 40%;
+  width: 55%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 header .wrapper .top_panel nav a {
-  font-size: 18px;
+  font-size: 16px;
   font-family: Rubik;
   text-transform: capitalize;
 }
@@ -364,6 +364,164 @@ section#exchange .wrapper .info p {
 }
 section#exchange .wrapper .info p b {
   color: #f7931a;
+}
+footer {
+  padding: 65px 0px;
+  background: #0D0D2B;
+}
+footer .wrapper .main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+footer .wrapper .main div {
+  flex-basis: 15%;
+}
+footer .wrapper .main div h5 {
+  font-family: Rubik-Medium;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 35px;
+}
+footer .wrapper .main div nav {
+  display: flex;
+  flex-direction: column;
+}
+footer .wrapper .main div nav a {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: Rubik;
+}
+footer .wrapper .main .logo {
+  margin-top: -12px;
+  display: flex;
+  align-items: center;
+}
+footer .wrapper .main .logo img {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+footer .wrapper .main .logo p {
+  font-size: 18px;
+  letter-spacing: 8px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Inter;
+}
+footer .wrapper p.copyright {
+  margin-top: 100px;
+  font-family: Rubik;
+  font-size: 16px;
+  color: white;
+}
+section#reward {
+  padding-bottom: 100px;
+  background: #0D0D2B;
+}
+section#reward .wrapper {
+  color: white;
+  text-align: center;
+}
+section#reward .wrapper .description h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: Rubik-Bold;
+}
+section#reward .wrapper .description p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-family: Rubik;
+}
+section#reward .wrapper .description p b {
+  color: #f7931a;
+}
+section#reward .wrapper div.table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+section#reward .wrapper div.table .row {
+  width: 100%;
+  font-family: Rubik;
+  font-size: 16px;
+  padding: 15px 0px;
+  border-bottom: 1px solid white;
+}
+section#reward .wrapper div.table .row.header {
+  font-family: Rubik-Bold;
+  font-size: 20px;
+}
+section#reward .wrapper div.table .row.current {
+  color: #f7931a;
+}
+section#reward .wrapper div.table .row ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+section#reward .wrapper div.table .row ul li {
+  flex-basis: 14.25%;
+}
+section#specification {
+  padding-bottom: 100px;
+  background: #0D0D2B;
+}
+section#specification .wrapper {
+  color: white;
+  text-align: center;
+}
+section#specification .wrapper .description h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-family: Rubik-Bold;
+}
+section#specification .wrapper .description p {
+  font-size: 16px;
+  margin-bottom: 30px;
+  font-family: Rubik;
+}
+section#specification .wrapper .description p b {
+  color: #f7931a;
+}
+section#specification .wrapper div.table {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+section#specification .wrapper div.table .row {
+  width: 100%;
+  font-family: Rubik;
+  font-size: 20px;
+  padding: 15px 0px;
+  border-bottom: 1px solid white;
+}
+section#specification .wrapper div.table .row.header {
+  font-family: Rubik-Bold;
+  font-size: 20px;
+}
+section#specification .wrapper div.table .row.current {
+  color: #f7931a;
+}
+section#specification .wrapper div.table .row ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+section#specification .wrapper div.table .row ul li:first-child {
+  font-family: Rubik-Medium;
+  text-align: left;
+  flex-basis: 25%;
+}
+section#specification .wrapper div.table .row ul li:last-child {
+  text-align: right;
+  flex-basis: 75%;
 }
 footer {
   padding: 65px 0px;
