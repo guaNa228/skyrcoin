@@ -375,6 +375,14 @@ section#exchange .wrapper .info p {
 section#exchange .wrapper .info p b {
   color: #F9AA4B;
 }
+@keyframes see_full_data {
+  0% img {
+    transform: translateY(0px);
+  }
+  100% img {
+    transform: translateY(5px);
+  }
+}
 section#specification {
   padding-top: 100px;
   background: #0D0D2B;
@@ -399,15 +407,23 @@ section#specification.disabled .wrapper .table .limiter {
   justify-content: flex-end;
   align-items: center;
 }
+section#specification.disabled .wrapper .table .limiter:hover p {
+  transform: translateY(-5px);
+}
+section#specification.disabled .wrapper .table .limiter:hover img {
+  transform: translateY(5px);
+}
 section#specification.disabled .wrapper .table .limiter p {
+  transition: 0.5s;
   color: #F9AA4B;
   font-size: 18px;
   font-family: Rubik;
 }
 section#specification.disabled .wrapper .table .limiter img {
-  margin-top: 5px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
+  transition: 0.5s;
 }
 section#specification .bg_img.line {
   transform: translate(-90deg);
@@ -439,7 +455,7 @@ section#specification .wrapper .description p b {
 section#specification .wrapper div.table {
   position: relative;
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   transition: 0.5s;
@@ -449,53 +465,52 @@ section#specification .wrapper div.table {
 section#specification .wrapper div.table .limiter {
   display: none;
 }
-section#specification .wrapper div.table .row {
-  width: 100%;
+section#specification .wrapper div.table ul {
   font-family: Rubik;
   font-size: 20px;
   padding: 15px 0px;
   border-bottom: 1px solid white;
-}
-section#specification .wrapper div.table .row.presub {
-  padding-bottom: 15px;
-  border-bottom: none;
-}
-section#specification .wrapper div.table .row.sub {
-  border-bottom: none;
-  padding-top: 0px;
-  padding-bottom: 10px;
-}
-section#specification .wrapper div.table .row.sub li {
-  font-size: 18px;
-}
-section#specification .wrapper div.table .row.sub li:first-child {
-  padding-left: 5%;
-}
-section#specification .wrapper div.table .row.sub.lastsub {
-  border-bottom: 1px solid white;
-  padding-bottom: 15px;
-}
-section#specification .wrapper div.table .row.header {
-  font-family: Rubik-Bold;
-  font-size: 20px;
-}
-section#specification .wrapper div.table .row ul {
   width: 100%;
   display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: space-between;
 }
-section#specification .wrapper div.table .row ul li:first-child {
+section#specification .wrapper div.table ul.presub {
+  padding-bottom: 15px;
+  border-bottom: none;
+}
+section#specification .wrapper div.table ul.sub {
+  border-bottom: none;
+  padding-top: 0px;
+  padding-bottom: 10px;
+}
+section#specification .wrapper div.table ul.sub li {
+  font-size: 18px;
+}
+section#specification .wrapper div.table ul.sub li:first-child {
+  padding-left: 5%;
+}
+section#specification .wrapper div.table ul.sub.lastsub {
+  border-bottom: 1px solid white;
+  padding-bottom: 15px;
+}
+section#specification .wrapper div.table ul.header {
+  font-family: Rubik-Bold;
+  font-size: 20px;
+}
+section#specification .wrapper div.table ul li:first-child {
+  padding-left: 5px;
   font-family: Rubik-Medium;
   text-align: left;
   flex-basis: 45%;
 }
-section#specification .wrapper div.table .row ul li:last-child {
+section#specification .wrapper div.table ul li:last-child {
+  padding-right: 5px;
   text-align: right;
   flex-basis: 55%;
 }
-section#specification .wrapper div.table .row ul li:last-child p {
+section#specification .wrapper div.table ul li:last-child p {
   font-size: 18px;
   margin-top: 10px;
 }

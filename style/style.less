@@ -404,6 +404,19 @@ section#exchange {
     }
 }
 
+@keyframes see_full_data {
+    0% {
+        img {
+            transform: translateY(0px);
+        }
+    }
+    100% {
+        img {
+            transform: translateY(5px);
+        }
+    }
+}
+
 section#specification {
     padding-top: 100px;
     background: @darkBg;
@@ -427,16 +440,25 @@ section#specification {
                     flex-direction: column;
                     justify-content: flex-end;
                     align-items: center;
+                    &:hover {
+                        p {
+                            transform: translateY(-5px);
+                        }
+                        img {
+                            transform: translateY(5px);
+                        }
+                    }
                     p {
+                        transition: .5s;
                         color: @highliting_orange;
                         font-size: 18px;
                         font-family: Rubik;
                     }
                     img {
-                        margin-top: 5px;
+                        margin-top: 2px;
                         width: 15px;
                         height: 15px;
-
+                        transition: .5s;
                     }
                 }
             }
@@ -473,7 +495,7 @@ section#specification {
         div.table {
             position: relative;
             margin: 0 auto;
-            width: 90%;
+            width: 95%;
             display: flex;
             flex-direction: column;
             transition: .5s;
@@ -482,8 +504,7 @@ section#specification {
             .limiter {
                 display: none;
             }
-            .row {
-                width: 100%;
+            ul {
                 font-family: Rubik;
                 font-size: 20px;
                 padding: 15px 0px;
@@ -511,27 +532,27 @@ section#specification {
                     font-family: Rubik-Bold;
                     font-size: 20px;
                 }
-                ul {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: row;
-                    list-style: none;
-                    justify-content: space-between;
-                    li:first-child {
-                        font-family: Rubik-Medium;
-                        text-align: left;
-                        flex-basis: 45%;
-                    }
-                    li:last-child {
-                        text-align: right;
-                        flex-basis: 55%;
-                        p {
-                            font-size: 18px;
-                            margin-top: 10px;
-                        }
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: space-between;
+                li:first-child {
+                    padding-left: 5px;
+                    font-family: Rubik-Medium;
+                    text-align: left;
+                    flex-basis: 45%;
+                }
+                li:last-child {
+                    padding-right: 5px;
+                    text-align: right;
+                    flex-basis: 55%;
+                    p {
+                        font-size: 18px;
+                        margin-top: 10px;
                     }
                 }
-            }
+            } 
         }
     }
 }
