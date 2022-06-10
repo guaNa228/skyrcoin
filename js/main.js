@@ -24,8 +24,8 @@ document.onload = getCurrentBlock();
 
 //Open specification table
 let limiter = document.querySelector('.limiter')
-function openSpecificationTable() {
+function OpenSpecificationTable() {
   this.parentElement.parentElement.parentElement.classList.remove('disabled');
 }
 
-limiter.addEventListener('click', openSpecificationTable);
+limiter.addEventListener('click', OpenSpecificationTable);

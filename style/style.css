@@ -26,11 +26,52 @@
   /* Путь к файлу со шрифтом */
   font-weight: bold;
 }
+/* Header appear animations */
+/*
+@keyframes logo_appear_animation {
+    0% {
+        transform: translate(-500px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes nav_appear_animation {
+    0% {
+        transform: translate(500px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes info_appear_animation {
+    0% {
+        
+        transform: rotateY(-90deg)
+    }
+    100% {
+        transform: rotateY(0deg)
+    }
+}
+
+@keyframes illustration_appear_animation {
+    0% {
+        
+        transform: translateY(500px)
+    }
+    100% {
+        transform: translateY(0px)
+    }
+}
+*/
 * {
   margin: 0;
   padding: 0;
 }
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 b {
@@ -173,7 +214,7 @@ header .wrapper .header_main .info button span img {
 header .wrapper .header_main .info button:hover span img {
   transform: translate(10px);
 }
-header .wrapper .header_main object {
+header .wrapper .header_main img {
   width: 45%;
 }
 @keyframes anim {
@@ -279,6 +320,25 @@ section#masternodes .wrapper .info p {
   line-height: 200%;
   margin-bottom: 40px;
 }
+/*
+@keyframes table_animation_odd {
+    0% {
+        transform: translate(-500px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes table_animation_even {
+    0% {
+        transform: translate(500px);
+    }
+    100% {
+        transform: translate(0px);
+    }
+}
+*/
 section#reward {
   padding-top: 100px;
   background: #0D0D2B;
